@@ -1,5 +1,5 @@
 #!/bin/sh
-
+#this the beggining of the code
 echo "                      ------Welcome to My Pizza!------"
 echo "Please Type in your Name first:"
 read name
