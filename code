@@ -1,8 +1,9 @@
 
-#this the beggining of the code#Alvin
-#this time i added some adjusments like the spacing for every line and start declaring variables#Alvin
-#Junel add your code  for the computation of each items#Alvin
-#I now added the codes for the cumputation#Junel
+#this the beginning of the code - alvin
+#this time i added some adjusments like the spacing for every line and start declaring variables - alvin
+#Junel add your code  for the computation of each items -alvin
+#I now added the codes for the cumputation -junel
+
 #!/bin/sh
 
 a=150
@@ -85,5 +86,9 @@ then
  echo "Your change is P$change.00. Thankyou for purchasing!"
  echo
  fi;;
+
+#junel, wow nice you did the code for the first problem of our script, now I'll just be refering to it and see if I can apply it to each items -Alvin
+#And can you do some spacing and tabs in your code? so that our it will neat look at. Thank you - Alvin
+
 esac
 done
