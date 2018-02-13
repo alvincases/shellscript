@@ -1,0 +1,19 @@
+#!/bin/sh
+
+echo "                      ------Welcome to My Pizza!------"
+echo "Please Type in your Name first:"
+read name
+echo "Hello $name, Please choose your order below:"
+echo "# a.   Hawaiian --P$a.00  #"
+
+echo "# b.   Cheese --P$b.00    #"
+
+echo "# c.   Ham --P$c.00       #"
+
+echo "# d.   Mozarella --P$d.00 #"
+
+echo "# e.   Chocolate --P$e.00 #"
+echo "Please input the letter of your choice. Thankyou."
+read choice
+
+done
