@@ -1,9 +1,43 @@
 #!/bin/sh
-#this the beggining of the code
+#this the beggining of the code#Alvin
+#this time i added some adjusments like the spacing for every line and start declaring variables#Alvin
+#Junel add your code  for the computation of each items#Alvin
+#!/bin/sh
+
+a=150
+
+b=120
+
+c=130
+
+d=160
+
+e=100
+
+echo
+
+echo
+
 echo "                      ------Welcome to My Pizza!------"
+
+echo 
+
+echo
+
+echo
+
 echo "Please Type in your Name first:"
+
+echo "------------------------"
+
 read name
+
+echo "------------------------"
+
 echo "Hello $name, Please choose your order below:"
+
+echo "############################"
+
 echo "# a.   Hawaiian --P$a.00  #"
 
 echo "# b.   Cheese --P$b.00    #"
@@ -13,7 +47,17 @@ echo "# c.   Ham --P$c.00       #"
 echo "# d.   Mozarella --P$d.00 #"
 
 echo "# e.   Chocolate --P$e.00 #"
+
+echo "############################"
+
+echo
+
 echo "Please input the letter of your choice. Thankyou."
+
+echo "------------------------"
+
 read choice
+
+echo "------------------------"
 
 done
