@@ -1,7 +1,8 @@
-#!/bin/sh
+
 #this the beggining of the code#Alvin
 #this time i added some adjusments like the spacing for every line and start declaring variables#Alvin
 #Junel add your code  for the computation of each items#Alvin
+#I now added the codes for the cumputation#Junel
 #!/bin/sh
 
 a=150
@@ -60,4 +61,29 @@ read choice
 
 echo "------------------------"
 
+while :
+do
+case $choice in
+ [a])       
+ echo       
+ echo "You ordered Hawaiian and the price is P$a.00"       
+ echo
+ echo "Please input the amount of your money."       
+ echo       
+ read moneyA       
+ echo
+if test $a -lt $moneyA
+ then        change=`expr $moneyA - $a`      
+  echo        
+ echo "Your change is P$change.00. Thankyou for purchasing!" ;      
+  echo
+elif test $a -gt $moneyA
+then extra=`expr $a - $moneyA`
+echo "Not enough!, You need more $extra pesos. Thankyou!"
+elif test $a -eq $moneyA
+then
+ echo "Your change is P$change.00. Thankyou for purchasing!"
+ echo
+ fi;;
+esac
 done
