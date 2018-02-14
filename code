@@ -3,244 +3,147 @@
 #this time i added some adjusments like the spacing for every line and start declaring variables - alvin
 #Junel add your code  for the computation of each items -alvin
 #I now added the codes for the cumputation -junel
-
+#I already arranged the placement of the codes-junel
 #!/bin/sh
-
 a=150
-
 b=120
-
 c=130
-
 d=160
-
 e=100
-
 echo
-
 echo
-
 echo "                      ------Welcome to My Pizza!------"
-
 echo 
-
 echo
-
 echo
-
 echo "Please Type in your Name first:"
-
 echo "------------------------"
-
 read name
-
 echo "------------------------"
-
 echo "Hello $name, Please choose your order below:"
-
 echo "############################"
-
 echo "# a.   Hawaiian --P$a.00  #"
-
 echo "# b.   Cheese --P$b.00    #"
-
 echo "# c.   Ham --P$c.00       #"
-
 echo "# d.   Mozarella --P$d.00 #"
-
 echo "# e.   Chocolate --P$e.00 #"
-
 echo "############################"
-
 echo
-
 echo "Please input the letter of your choice. Thankyou."
-
 echo "------------------------"
-
 read choice
-
 echo "------------------------"
-
 while :
 do
 case $choice in
  [a])       
- echo       
- echo "You ordered Hawaiian and the price is P$a.00"       
- echo
- echo "Please input the amount of your money."       
- echo       
- read moneyA       
- echo
+ 	echo       
+ 	echo "You ordered Hawaiian and the price is P$a.00"       
+ 	echo
+ 	echo "Please input the amount of your money."       
+ 	echo       
+ 	read moneyA       
+ 	echo
 if test $a -lt $moneyA
- then        change=`expr $moneyA - $a`      
-  echo        
- echo "Your change is P$change.00. Thankyou for purchasing!" ;      
-  echo
+then        
+	change=`expr $moneyA - $a`      
+  	echo        
+ 	echo "Your change is P$change.00. Thankyou for purchasing!" ;      
+  	echo
 elif test $a -gt $moneyA
-then extra=`expr $a - $moneyA`
-echo "Not enough!, You need more $extra pesos. Thankyou!"
+then 
+	extra=`expr $a - $moneyA`
+	echo "Not enough!, You need more $extra pesos. Thankyou!"
 elif test $a -eq $moneyA
 then
- echo "Your change is P$change.00. Thankyou for purchasing!"
- echo
- fi;;
+	 echo "Your change is P$change.00. Thankyou for purchasing!"
+	 echo
+ fi
+;;
 
 #junel, wow nice you did the code for the first problem of our script, now I'll just be refering to it and see if I can apply it to each items -Alvin
 #And can you do some spacing and tabs in your code? so that our it will neat look at. Thank you - Alvin
 
 b])
-
-		echo "You ordered Cheese and the price is P120.00"
-
-		echo "Please input the amount of your money."
-
-		read moneyA
-
+	echo "You ordered Cheese and the price is P120.00"
+	echo "Please input the amount of your money."
+	read moneyA
 if test $b -lt $moneyA
-
 then
-
-		change=`expr $moneyA - $b`
-
-		echo 
-
-		echo "Your change is P$change.00. Thankyou for purchasing!" ;
-
-		echo
-
+	change=`expr $moneyA - $b`
+	echo 
+	echo "Your change is P$change.00. Thankyou for purchasing!" ;
+	echo
 elif test $b -gt $moneyA
-
 then 
-
-extra=`expr $b - $moneyA`
-
+	extra=`expr $b - $moneyA`
 echo "Not enough!, You need more $extra pesos. Thankyou!"
-
 elif test $b -eq $moneyA
-
 then 
-
 echo "Your change is P$change.00. Thankyou for purchasing!" ;
-
 echo 
-
-fi;;
+fi
+;;
 
 [c])
-
-		echo "You ordered Ham and the price is P130.00"
-
-		echo "Please input the amount of your money."
-
-		read moneyA
-
+	echo "You ordered Ham and the price is P130.00"
+	echo "Please input the amount of your money."
+	read moneyA
 if test $c -lt $moneyA
-
 then
-
-		change=`expr $moneyA - $c`
-
-		echo 
-
-		echo "Your change is P$change.00. Thankyou for purchasing!" ;
-
-		echo
-
+	change=`expr $moneyA - $c`
+	echo 
+	echo "Your change is P$change.00. Thankyou for purchasing!" ;
+	echo
 elif test $c -gt $moneyA
-
 then 
-
-extra=`expr $c - $moneyA`
-
-echo "Not enough!, You need more $extra pesos. Thankyou!"
-
+	extra=`expr $c - $moneyA`
+	echo "Not enough!, You need more $extra pesos. Thankyou!"
 elif test $c -eq $moneyA
-
 then 
-
-echo "Your change is P$change.00. Thankyou for purchasing!" ;
-
-echo 
-
+	echo "Your change is P$change.00. Thankyou for purchasing!" ;
+	echo 
 fi
-	;;
+;;
+[d])
 
-	[d])
-
-		echo "You ordered Mozarella and the price is P160.00"
-
-		echo "Please input the amount of your money."
-
-		read moneyA
-
+	echo "You ordered Mozarella and the price is P160.00"
+	echo "Please input the amount of your money."
+	read moneyA
 if test $d -lt $moneyA
-
 then
-
-		change=`expr $moneyA - $d`
-
-		echo 
-
-		echo "Your change is P$change.00. Thankyou for purchasing!" ;
-
-		echo
-
+	change=`expr $moneyA - $d`
+	echo 
+	echo "Your change is P$change.00. Thankyou for purchasing!" ;
+	echo
 elif test $d -gt $moneyA
-
 then 
-
-extra=`expr $d - $moneyA`
-
-echo "Not enough!, You need more $extra pesos. Thankyou!"
-
+	extra=`expr $d - $moneyA`
+	echo "Not enough!, You need more $extra pesos. Thankyou!"
 elif test $d -eq $moneyA
-
 then 
-
-echo "Your change is P$change.00. Thankyou for purchasing!" ;
-
+	echo "Your change is P$change.00. Thankyou for purchasing!" ;
 echo 
-
-fi;;
+fi
+;;
 
 [e])
-
-		echo "You ordered Chocolate and the price is P100.00"
-
-		echo "Please input the amount of your money."
-
-		read moneyA
-
+	echo "You ordered Chocolate and the price is P100.00"
+	echo "Please input the amount of your money."
+	read moneyA
 if test $e -lt $moneyA
-
 then
-
-		change=`expr $moneyA - $e`
-
-		echo 
-
-		echo "Your change is P$change.00. Thankyou for purchasing!" ;
-
-		echo
-
+	change=`expr $moneyA - $e`
+	echo 
+	echo "Your change is P$change.00. Thankyou for purchasing!" ;
+	echo
 elif test $e -gt $moneyA
-
 then 
-
-extra=`expr $e - $moneyA`
-
-echo "Not enough!, You need more $extra pesos. Thankyou!"
-
+	extra=`expr $e - $moneyA`
+`	echo "Not enough!, You need more $extra pesos. Thankyou!"
 elif test $e -eq $moneyA
-
 then 
-
-echo "Your change is P$change.00. Thankyou for purchasing!" ;
-
-echo 
-
-
+	echo "Your change is P$change.00. Thankyou for purchasing!" ;
+	echo 
 esac
 done
