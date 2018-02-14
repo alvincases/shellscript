@@ -59,6 +59,7 @@ then
 	 echo "Your change is P$change.00. Thankyou for purchasing!"
 	 echo
  fi
+ break
 ;;
 
 #junel, wow nice you did the code for the first problem of our script, now I'll just be refering to it and see if I can apply it to each items -Alvin
@@ -83,6 +84,7 @@ then
 echo "Your change is P$change.00. Thankyou for purchasing!" ;
 echo 
 fi
+break
 ;;
 
 [c])
@@ -103,7 +105,9 @@ elif test $c -eq $moneyA
 then 
 	echo "Your change is P$change.00. Thankyou for purchasing!" ;
 	echo 
+
 fi
+break
 ;;
 [d])
 
@@ -125,6 +129,7 @@ then
 	echo "Your change is P$change.00. Thankyou for purchasing!" ;
 echo 
 fi
+break
 ;;
 
 [e])
@@ -140,10 +145,12 @@ then
 elif test $e -gt $moneyA
 then 
 	extra=`expr $e - $moneyA`
-`	echo "Not enough!, You need more $extra pesos. Thankyou!"
+	echo "Not enough!, You need more $extra pesos. Thankyou!"
 elif test $e -eq $moneyA
 then 
 	echo "Your change is P$change.00. Thankyou for purchasing!" ;
 	echo 
+fi 
+;;
 esac
 done
