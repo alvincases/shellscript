@@ -90,5 +90,157 @@ then
 #junel, wow nice you did the code for the first problem of our script, now I'll just be refering to it and see if I can apply it to each items -Alvin
 #And can you do some spacing and tabs in your code? so that our it will neat look at. Thank you - Alvin
 
+b])
+
+		echo "You ordered Cheese and the price is P120.00"
+
+		echo "Please input the amount of your money."
+
+		read moneyA
+
+if test $b -lt $moneyA
+
+then
+
+		change=`expr $moneyA - $b`
+
+		echo 
+
+		echo "Your change is P$change.00. Thankyou for purchasing!" ;
+
+		echo
+
+elif test $b -gt $moneyA
+
+then 
+
+extra=`expr $b - $moneyA`
+
+echo "Not enough!, You need more $extra pesos. Thankyou!"
+
+elif test $b -eq $moneyA
+
+then 
+
+echo "Your change is P$change.00. Thankyou for purchasing!" ;
+
+echo 
+
+fi;;
+
+[c])
+
+		echo "You ordered Ham and the price is P130.00"
+
+		echo "Please input the amount of your money."
+
+		read moneyA
+
+if test $c -lt $moneyA
+
+then
+
+		change=`expr $moneyA - $c`
+
+		echo 
+
+		echo "Your change is P$change.00. Thankyou for purchasing!" ;
+
+		echo
+
+elif test $c -gt $moneyA
+
+then 
+
+extra=`expr $c - $moneyA`
+
+echo "Not enough!, You need more $extra pesos. Thankyou!"
+
+elif test $c -eq $moneyA
+
+then 
+
+echo "Your change is P$change.00. Thankyou for purchasing!" ;
+
+echo 
+
+fi
+	;;
+
+	[d])
+
+		echo "You ordered Mozarella and the price is P160.00"
+
+		echo "Please input the amount of your money."
+
+		read moneyA
+
+if test $d -lt $moneyA
+
+then
+
+		change=`expr $moneyA - $d`
+
+		echo 
+
+		echo "Your change is P$change.00. Thankyou for purchasing!" ;
+
+		echo
+
+elif test $d -gt $moneyA
+
+then 
+
+extra=`expr $d - $moneyA`
+
+echo "Not enough!, You need more $extra pesos. Thankyou!"
+
+elif test $d -eq $moneyA
+
+then 
+
+echo "Your change is P$change.00. Thankyou for purchasing!" ;
+
+echo 
+
+fi;;
+
+[e])
+
+		echo "You ordered Chocolate and the price is P100.00"
+
+		echo "Please input the amount of your money."
+
+		read moneyA
+
+if test $e -lt $moneyA
+
+then
+
+		change=`expr $moneyA - $e`
+
+		echo 
+
+		echo "Your change is P$change.00. Thankyou for purchasing!" ;
+
+		echo
+
+elif test $e -gt $moneyA
+
+then 
+
+extra=`expr $e - $moneyA`
+
+echo "Not enough!, You need more $extra pesos. Thankyou!"
+
+elif test $e -eq $moneyA
+
+then 
+
+echo "Your change is P$change.00. Thankyou for purchasing!" ;
+
+echo 
+
+
 esac
 done
